@@ -1,0 +1,28 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root{
+  position: relative;
+  width:40%;
+  height: 40%;
+  background: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inputTag{
+  position: absolute;
+  top: 10vh;
+  width: 20%;
+  height: 8%;
+}
