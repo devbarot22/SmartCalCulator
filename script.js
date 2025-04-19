@@ -9,16 +9,14 @@ const Calculator = (
     }
 
     return{
-      viewHistory:function(){
-        this.forEach((entry, i) => 
-          console.log(`${i + 1}: ${entry.operation} = ${entry.result}`)
-        )
-      }.bind(history),
-
       clearHistory: function(){
-        history = [];
+        history.length = 0;
         console.log("history cleared");
       },
+
+      viewHistory: function(){
+        return this.map((entry, i) => `${i + 1}: ${entry.operations} = ${entry.result}`).join("<br>");
+      }.bind(history),
 
       add:function(a){
         return function(b){
@@ -40,7 +38,7 @@ const Calculator = (
         saveHistory(`${a} - ${b}`, result);
         memo[subs] = result;
         return result;
-      }
+      },
     }
 
   }

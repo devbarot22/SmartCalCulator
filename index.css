@@ -8,13 +8,16 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aqua;
 }
 
 #root{
   position: relative;
-  width:40%;
-  height: 40%;
-  background: cadetblue;
+  width:300px;
+  height: 200px;
+  margin-top: 10px;
+  background: white;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +26,43 @@ body{
 #inputTag{
   position: absolute;
   top: 10vh;
-  width: 20%;
+  width: 40%;
+  padding: 10px;
   height: 8%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  
+}
+
+button{
+  width: 8em;
+  height: 3em;
+  position: absolute;
+  bottom: 5vh;
+  cursor: pointer;
+}
+
+
+#resultDiv{
+  position:absolute;
+  bottom: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+#historyIcon{
+  position: absolute;
+  height: 20px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#historyView{
+  background-color: whitesmoke;
+  position: absolute;
+  width: 310px;
+  height: 350px;
+  border-radius: 10px;
+  right: 20px;
 }
